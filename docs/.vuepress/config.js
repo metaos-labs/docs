@@ -180,9 +180,9 @@ function getGuideSidebar(guide, test1, test2, test3) {
           children: ['for_web3_user/keyring.md', 'for_web3_user/multisig.md'],
         },
         {
-          title: 'Tool',
+          title: 'Links',
           collapsable: true,
-          children: ['for_web3_user/wormhole.md'],
+          children: ['for_web3_user/wormhole.md', 'for_web3_user/swap.md'],
         },
       ],
     },
