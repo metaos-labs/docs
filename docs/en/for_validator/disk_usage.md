@@ -19,7 +19,7 @@ The index is located under the database directory with name `data/tx_index.db/`.
 
 ### State-sync snapshots
 
-I believe this was disabled by default on Evmos, but listing it in any case here. On `app.toml` set
+I believe this was disabled by default on MetaOS, but listing it in any case here. On `app.toml` set
 
 ```yaml
 snapshot-interval = 0

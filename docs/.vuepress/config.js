@@ -146,7 +146,7 @@ module.exports = (_ctx) => ({
   // extraWatchFiles: ['.vuepress/nav/en.js', '.vuepress/nav/zh.js'],
 });
 
-function getGuideSidebar(guide, test1, test2, test3) {
+function getGuideSidebar(guide, user, dev, validator) {
   return [
     {
       title: guide,
@@ -154,7 +154,7 @@ function getGuideSidebar(guide, test1, test2, test3) {
       children: [''],
     },
     {
-      title: test1,
+      title: user,
       collapsable: false,
       children: [
         {
@@ -171,7 +171,7 @@ function getGuideSidebar(guide, test1, test2, test3) {
           collapsable: true,
           children: [
             'for_web3_user/metamask.md',
-            'for_web3_user/sophon-wallet.md',
+            'for_web3_user/metaos-wallet.md',
           ],
         },
         {
@@ -187,14 +187,48 @@ function getGuideSidebar(guide, test1, test2, test3) {
       ],
     },
     {
-      title: test2,
+      title: dev,
       collapsable: false,
-      children: ['test21', 'test22', 'test23'],
+      children: [
+          'for_web3_dev/quick_connect.md',
+        'for_web3_dev/guides.md',
+        'for_web3_dev/localnet.md',
+        {
+          title: 'Ethereum Tooling',
+          collapsable: true,
+          children: ['for_web3_dev/remix.md', 'for_web3_dev/hardhat.md', 'for_web3_dev/truffle.md'],
+        },
+        {
+          title: 'Ethereum JSON-RPC',
+          collapsable: true,
+          children: ['for_web3_dev/json_server.md', 'for_web3_dev/running_server.md', 'for_web3_dev/namespace.md',
+            'for_web3_dev/jsonrpc_method.md', 'for_web3_dev/event.md'],
+        },
+        "for_web3_dev/wasm.md",
+        "for_web3_dev/cosmos_grpc.md",
+        "for_web3_dev/tendermint_rpc.md",
+        {
+          title: 'Modules',
+          collapsable: true,
+          children: ['for_web3_dev/modules/inflation.md', 'for_web3_dev/modules/pool-incentives.md',
+            'for_web3_dev/modules/delayed.md'],
+        },
+      ],
     },
     {
-      title: test3,
+      title: validator,
       collapsable: false,
-      children: ['test21', 'test22', 'test23'],
+      children: [
+          "for_validator/overview.md",
+          {
+            title: 'Installation & Quick Start',
+            collapsable: true,
+            children: ["for_validator/installation.md", "for_validator/run_node.md",  "for_validator/run_node.md",
+              "for_validator/run_validator.md", "for_validator/disk_usage.md"],
+          },
+          "for_validator/validator_guide.md",
+          "for_validator/faq.md",
+      ],
     },
   ];
 }

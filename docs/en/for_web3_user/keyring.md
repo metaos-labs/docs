@@ -4,15 +4,15 @@ The keyring holds the private/public keypairs used to interact with the node. Fo
 ### Add keys
 You can use the following commands for help with the keys command and for more information about a particular subcommand, respectively:
 ```bash
-sophond keys [command] --help
+metaosd keys [command] --help
 ```
 To create a new key in the keyring, run the add subcommand with a <key_name> argument. You will have to provide a password for the newly generated key. This key will be used in the next section.
 
 ```bash
-sophond keys add mykey
+metaosd keys add mykey
 
 # Put the generated address in a variable for later use.
-MY_VALIDATOR_ADDRESS=$(sophond keys show mykey -a)
+MY_VALIDATOR_ADDRESS=$(metaosd keys show mykey -a)
 ```
 This command generates a new 24-word mnemonic phrase, persists it to the relevant backend, and outputs information about the keypair. If this keypair will be used to hold value-bearing tokens, be sure to write down the mnemonic phrase somewhere safe!
 
@@ -38,10 +38,10 @@ The file stores the keyring encrypted within the app's configuration directory. 
 
 ```bash
 # assuming that KEYPASSWD is set in the environment
-yes $KEYPASSWD | sophond keys add me
-yes $KEYPASSWD | sophond keys show me
-# start evmosd with keyring-backend flag
-sophond --keyring-backend=file start
+yes $KEYPASSWD | metaosd keys add me
+yes $KEYPASSWD | metaosd keys show me
+# start metaosd with keyring-backend flag
+metaosd --keyring-backend=file start
 ```
 
 The first time you add a key to an empty keyring, you will be prompted to type the password twice.

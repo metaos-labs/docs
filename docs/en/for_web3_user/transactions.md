@@ -16,7 +16,7 @@ contract deployment transactions: transactions without a to address, where the c
 execution of a contract: transactions that interact with a deployed smart contract, where the to address is the smart contract address
 For more information on Ethereum transactions and the transaction lifecycle, go here (opens new window).
 
-Sophon supports the following Ethereum transactions.
+MetaOS supports the following Ethereum transactions.
 
 Note: Unprotected legacy transactions are not supported by default.
 - Dynamic Fee Transactions ([EIP-1559](https://eips.ethereum.org/EIPS/eip-1559))

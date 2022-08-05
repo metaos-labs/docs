@@ -74,7 +74,7 @@ Open `truffle-config.js` and uncomment the `development` section in `networks`:
       network_id: "*",       // Any network (default: none)
     },
 ```
-This will allow your contract to connect to your Evmos local node.
+This will allow your contract to connect to your MetaOS local node.
 
 ### Deploy contract
 In the Truffle terminal, migrate the contract using:
@@ -90,7 +90,7 @@ I[2020-07-15|17:36:02.981] Added good transaction                       module=m
 ```
 
 ### Run Truffle tests
-Now, you can run the Truffle tests using the Evmos node using the test command:
+Now, you can run the Truffle tests using the MetaOS node using the test command:
 
 ```bash
 $ truffle test --network development

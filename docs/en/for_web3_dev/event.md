@@ -70,7 +70,7 @@ ws ws://localhost:8080/websocket
 ```
 
 #### Ethereum Websocket
-Since Evmos runs uses Tendermint Core as it's consensus Engine and it's built with the Cosmos SDK framework, 
+Since MetaOS runs uses Tendermint Core as it's consensus Engine and it's built with the Cosmos SDK framework, 
 it inherits the event format from them. However, in order to support the native Web3 compatibility for websockets of the [Ethereum's PubSubAPI](https://geth.ethereum.org/docs/rpc/pubsub), MetaOS needs to cast the Tendermint responses retrieved into the Ethereum types.
 
 You can start a connection with the Ethereum websocket using the `--json-rpc.ws-address` flag when starting the node (default `"0.0.0.0:8546"`):

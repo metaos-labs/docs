@@ -12,7 +12,7 @@ To create your validator on testnet, just use the following command:
 ```bash
 metaosd tx staking create-validator \
   --amount=1000000umtos \
-  --pubkey=$(evmosd tendermint show-validator) \
+  --pubkey=$(metaosd tendermint show-validator) \
   --moniker="choose a moniker" \
   --chain-id=<chain_id> \
   --commission-rate="0.05" \

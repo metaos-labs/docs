@@ -1,30 +1,30 @@
 # MetaOs Clients
 
-The Evmos supports different clients in order to support Cosmos and Ethereum transactions and queries:
+The MetaOS supports different clients in order to support Cosmos and Ethereum transactions and queries:
 
 |  | Description | Default Port |
 |:--|---|---|
-| Cosmos gRPC | Query or send Evmos transactions using gRPC | 9090 |
-| Cosmos REST (gRPC-Gateway) | Query or send Evmos transactions using an HTTP RESTful API | 9091 |
+| Cosmos gRPC | Query or send MetaOS transactions using gRPC | 9090 |
+| Cosmos REST (gRPC-Gateway) | Query or send MetaOS transactions using an HTTP RESTful API | 9091 |
 | Ethereum JSON-RPC | Query Ethereum-formatted transactions and blocks or send Ethereum txs using JSON-RPC | 8545 |
 | Ethereum Websocket | Subscribe to Ethereum logs and events emitted in smart contracts. | 8586 |
 | Tendermint RPC | Subscribe to Ethereum logs and events emitted in smart contracts. | 26657 |
 | Tendermint Websocket | Query transactions, blocks, consensus state, broadcast transactions, etc. | 26657 |
-| Command Line Interface (CLI) | Query or send Evmos transactions using your Terminal or Console. | N/A |
+| Command Line Interface (CLI) | Query or send MetaOS transactions using your Terminal or Console. | N/A |
 
 ### Cosmos gRPC
 
-Evmos exposes gRPC endpoints for all the integrated Cosmos SDK modules. This makes it easier for wallets and block explorers to interact with the Proof-of-Stake logic and native Cosmos transactions and queries.
+MetaOS exposes gRPC endpoints for all the integrated Cosmos SDK modules. This makes it easier for wallets and block explorers to interact with the Proof-of-Stake logic and native Cosmos transactions and queries.
 
 #### Cosmos gRPC-Gateway (HTTP REST)
 
 gRPC-Gateway (opens new window) reads a gRPC service definition and generates a reverse-proxy server which translates RESTful JSON API into gRPC. With gRPC-Gateway, users can use REST to interact the Cosmos gRPC service.
 
-See the list of supported gRPC-Gateway API endpoints for the Evmos testnet here (opens new window).
+See the list of supported gRPC-Gateway API endpoints for the MetaOS testnet here TODO.
 
 ### Ethereum JSON-RPC
 
-Evmos supports most of the standard JSON-RPC APIs to connect with existing Ethereum-compatible web3 tooling.
+MetaOS supports most of the standard JSON-RPC APIs to connect with existing Ethereum-compatible web3 tooling.
 
 ### Ethereum Websocket
 

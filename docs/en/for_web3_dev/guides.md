@@ -122,7 +122,7 @@ import (
 )
 
 func queryState() error {
-    myAddress, err := GetMtosAddressFromBech32("mtos1...") // evmos address with balances of interest.
+    myAddress, err := GetMtosAddressFromBech32("mtos1...") 
     if err != nil {
         return err
     }
@@ -149,7 +149,7 @@ func queryState() error {
     return nil
 }
 
-// evmosjs address converter.
+
 func GetMtosAddressFromBech32(address string) (string, error) {...}
 ```
 

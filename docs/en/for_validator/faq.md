@@ -1,8 +1,8 @@
 # Validator FAQ
 
-### General Concepts
+## General Concepts
 
-#### What is a validator?
+### What is a validator?
 MetaOS is powered by Tendermint (opens new window)Core, which relies on a set of validators to secure the network. 
 Validators run a full node and participate in consensus by broadcasting votes which contain cryptographic signatures signed by their private key.
 Validators commit new blocks in the blockchain and receive revenue in exchange for their work. 
@@ -10,7 +10,7 @@ They also participate in on-procotol treasury governance by voting on governance
 A validator's voting influence is weighted according to their total stake.
 
 
-#### What is "staking"?
+### What is "staking"?
 MetaOS is a public Proof-of-Stake (PoS) blockchain, meaning that validator's weight is determined by the amount of staking tokens (MTOS) bonded as collateral. 
 These staking tokens can be staked directly by the validator or delegated to them by MTOS holders.
 
@@ -21,7 +21,7 @@ and also how frequently this node will have to propose a block and how much reve
 only the top 150 validators with the most weight will be active validators. If validators double-sign,
 or are frequently offline, they risk their staked tokens (including MTOS delegated by users) being "slashed" by the protocol to penalize negligence and misbehavior.
 
-#### What is a full node?
+### What is a full node?
 A full node is a program that fully validates transactions and blocks of a blockchain.
 It is distinct from a light client node that only processes block headers and a small subset of transactions.
 Running a full node requires more resources than a light client but is necessary in order to be a validator. 
@@ -29,7 +29,7 @@ In practice, running a full-node only implies running a non-compromised and up-t
 
 Of course, it is possible and encouraged for any user to run full nodes even if they do not plan to be validators.
 
-#### What is a delegator?
+### What is a delegator?
 
 Delegators are MTOS holders who cannot, or do not want to run validator operations themselves. 
 Users can delegate MTOS to a validator and obtain a part of its revenue in exchange 
@@ -43,8 +43,8 @@ Delegators play a critical role in the system, as they are responsible for choos
 Be aware that being a delegator is not a passive role. Delegators are obligated to remain vigilant and actively monitor the actions of their validators, 
 switching should they fail to act responsibly.
 
-### Becoming a Validator
-#### How to become a validator?
+## Becoming a Validator
+### How to become a validator?
 Any participant in the network can signal their intent to become a validator by creating a validator and registering its validator profile. 
 To do so, the candidate broadcasts a create-validator transaction, in which they must submit the following information:
 
@@ -69,8 +69,8 @@ Once a validator is created and registered, MTOS holders can delegate MTOS to it
 Only the top 21 validators with the most stake are considered the active validators, becoming bonded validators. 
 If ever a validator's total stake dips below the top 150, the validator loses its validator privileges (meaning that it won't generate rewards) and no longer serves as part of the active set (i.e doesn't participate in consensus), entering unbonding mode and eventually becomes unbonded.
 
-### Validator keys and states
-#### What are the different types of keys?
+## Validator keys and states
+### What are the different types of keys?
 In short, there are two types of keys:
 - **Tendermint Key**: This is a unique key used to sign block hashes. 
   - Generated when the node is created with `metaosd init`.
@@ -78,7 +78,7 @@ In short, there are two types of keys:
   - 
 - Application keys: These keys are created from the application and used to sign transactions. 
 
-#### What are the different states a validator can be in?
+### What are the different states a validator can be in?
 After a validator is created with a `create-validator` transaction, it can be in three states:
 - `bonded`: Validator is in the active set and participates in consensus. Validator is earning rewards and can be slashed for misbehaviour.
 - `unbonding`: Validator is not in the active set and does not participate in consensus. Validator is not earning rewards, but can still be slashed for misbehaviour. This is a transition state from bonded to unbonded. If validator does not send a rebond transaction while in unbonding mode, it will take three weeks for the state transition to complete.
@@ -86,10 +86,10 @@ After a validator is created with a `create-validator` transaction, it can be in
 
 Delegators have the same state as their validator.
 
-#### What is "self-bond"? How can I increase my "self-bond"?
+### What is "self-bond"? How can I increase my "self-bond"?
 The validator operator's "self-bond" refers to the amount of MTOS stake delegated to itself. You can increase your self-bond by delegating more MTOS to your validator account.
 
-#### How will delegators choose their validators?
+### How will delegators choose their validators?
 Delegators are free to choose validators according to their own subjective criteria. That said, criteria anticipated to be important include:
 
 - Amount of self-bonded MTOS: Number of MTOS a validator self-bonded to its staking pool. A validator with higher amount of self-bonded MTOS has more skin in the game, making it more liable for its actions.

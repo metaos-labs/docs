@@ -18,7 +18,7 @@ You can generate a new key/mnemonic with:
 metaosd keys add $KEY
 ``` 
 
-To export your evmos key as an Ethereum private key (for use with Metamask for example):
+To export your MetaOS key as an Ethereum private key (for use with Metamask for example):
 
 ```bash
 metaosd keys unsafe-export-eth-key $KEY

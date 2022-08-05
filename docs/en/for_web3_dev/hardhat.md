@@ -77,7 +77,7 @@ module.exports = {
         hardhat: {
         },
         testnet: {
-            url: "https://eth.bd.evmos.dev:8545",
+            url: "https://localhost:8545",
             accounts: [privateKey1, privateKey2, ...]
         }
     },
