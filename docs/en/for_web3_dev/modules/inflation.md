@@ -53,9 +53,9 @@ f(2)     37500000        262500000     102 740
 
 
 
-# State
+## State
 
-## State Objects
+### State Objects
 
 The `x/inflation` module keeps the following objects in state:
 
@@ -85,7 +85,7 @@ Amount of epochs in one period
 
 
 
-## Genesis State
+### Genesis State
 
 The `x/inflation` module's `GenesisState` defines the state necessary for initializing the chain from a previously exported height. 
 
@@ -115,11 +115,11 @@ type GenesisState struct {
 
 
 
-# Hooks
+## Hooks
 
 The `x/inflation` module implements the `AfterEpochEnd` hook from the `epoch` module in order to allocate inflation.
 
-## Epoch Hook: Inflation
+### Epoch Hook: Inflation
 
 The epoch hook handles the inflation logic which is run at the end of each epoch. It is responsible for minting and allocating the epoch mint provision as well as updating it:
 
@@ -138,11 +138,11 @@ The epoch hook handles the inflation logic which is run at the end of each epoch
 
 
 
-# Events
+## Events
 
 The `x/inflation` module emits the following events:
 
-## Inflation
+### Inflation
 
 | Type        | Attibute Key         | Attibute Value                                |
 | :---------- | :------------------- | :-------------------------------------------- |
@@ -158,7 +158,7 @@ The `x/inflation` module emits the following events:
 
 
 
-# Parameters
+## Parameters
 
 The `x/inflation` module contains the parameters described below. 
 
@@ -173,15 +173,15 @@ The `x/inflation` module contains the parameters described below.
 | `InflationDistribution`  | InflationDistribution  | `StakingRewards: 100%`                     |
 | `EnableInflation`        | bool                   | `true`                                     |
 
-## Mint Denom
+### Mint Denom
 
 The `MintDenom` parameter sets the denomination in which new coins are minted.
 
-## Exponential Calculation
+### Exponential Calculation
 
 The `ExponentialCalculation` parameter holds all values required for the calculation of the `epochMintProvision`. The values `A`, `R` and `C` describe the descrease of inflation over time. The `BondingTarget` and `MaxVariance` allow for an increase in inflation, which is automatically regulated by the `bonded ratio`, the portion of staked tokens in the network. 
 
-## Enable Inflation
+### Enable Inflation
 
 The `EnableInflation` parameter enables the daily inflation. If it is disabled, no tokens are minted and the number of skipped epochs increases for each passed epoch.
 
@@ -193,11 +193,11 @@ The `EnableInflation` parameter enables the daily inflation. If it is disabled, 
 
 
 
-# Clients
+## Clients
 
 A user can query the `x/inflation` module using the CLI, JSON-RPC, gRPC or REST.
 
-## CLI
+### CLI
 
 Find below a list of `metaosd` commands added with the `x/inflation` module. You can obtain the full list by using the `metaos -h` command.
 
