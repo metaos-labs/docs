@@ -12,7 +12,7 @@
 
 
 
-#  Pool-incentives Model
+##  Pool-incentives Model
 
 `x/pool-incentives`模块实现了随机交易挖矿逻辑,奖励随时间递减,随机交易挖矿发行的MTOS将占总发行量的`10%`,约`2亿MTOS`,项目初期会预先指定部分核心交易对参与挖矿，未来可以通过社区治理调整核心交易对,详细设计如下:
 
@@ -36,9 +36,9 @@
 
 
 
-# State
+## State
 
-## State Objects
+### State Objects
 
 The `x/pool-incentives` module keeps the following objects in state:
 
@@ -62,7 +62,7 @@ The `x/pool-incentives` module keeps the following objects in state:
 
 ### 
 
-## Genesis State
+### Genesis State
 
 The `x/pool-incentives` module's `GenesisState` defines the state necessary for initializing the chain from a previously exported height. 
 
@@ -95,7 +95,7 @@ type GenesisState struct {
 
 
 
-# Parameters
+## Parameters
 
 The `x/pool-incentives` module contains the parameters described below
 
@@ -113,43 +113,43 @@ The `x/pool-incentives` module contains the parameters described below
 | `LiquidityRewardCreateEnabled`             | bool   | true          |
 | `CorePoolLiquidityRewardConfigId`          | uint64 | 1             |
 
-## SuperOperator
+### SuperOperator
 
 超级管理,此字段目前未使用
 
-## RewardDenom
+### RewardDenom
 
 奖励的币种
 
-## RandSwapRewardEnabled
+### RandSwapRewardEnabled
 
 随机交易挖矿的开关,如果此字段为false则代表随机交易挖矿功能被禁用
 
-## RandSwapRewardCreateEnabled
+### RandSwapRewardCreateEnabled
 
 是否允许创建随机交易挖矿
 
-## CorePoolRandSwapRewardConfigId
+### CorePoolRandSwapRewardConfigId
 
 核心交易池配置id,只有与核心交易对交易的用户才有可能获取随机交易挖矿奖励
 
-## RandSwapRewardMaxNumberOfRevealPerConfig
+### RandSwapRewardMaxNumberOfRevealPerConfig
 
 为防止开奖时抽奖次数过多导致出块时间变长,交易挖矿开奖时需要规定每一级奖项最多开奖次数
 
-## RandSwapRewardMaxNumberOfRevealPerBlock
+### RandSwapRewardMaxNumberOfRevealPerBlock
 
 为防止开奖时抽奖次数过多导致出块时间变长,交易挖矿开奖时需要规定每一高度最多开奖次数
 
-## LiquidityRewardEnabled 
+### LiquidityRewardEnabled 
 
 流动性挖矿开关
 
-## LiquidityRewardCreateEnabled
+### LiquidityRewardCreateEnabled
 
 流动性挖矿创建开关
 
-## CorePoolLiquidityRewardConfigId
+### CorePoolLiquidityRewardConfigId
 
 核心交易池配置id
 
@@ -157,11 +157,11 @@ The `x/pool-incentives` module contains the parameters described below
 
 
 
-# Clients
+## Clients
 
 A user can query the `x/pool-incentives` module using the CLI, JSON-RPC, gRPC or REST.
 
-## CLI
+### CLI
 
 Find below a list of `metaosd` commands added with the `x/pool-incentives` module. You can obtain the full list by using the `metaos -h` command.
 
