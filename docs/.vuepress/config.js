@@ -192,6 +192,7 @@ function getGuideSidebar(guide, user, dev, validator) {
       children: [
           'for_web3_dev/quick_connect.md',
         'for_web3_dev/guides.md',
+          'for_web3_dev/metaos_client.md',
         'for_web3_dev/localnet.md',
         {
           title: 'Ethereum Tooling',

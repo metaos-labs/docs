@@ -20,7 +20,7 @@ MetaOS exposes gRPC endpoints for all the integrated Cosmos SDK modules. This ma
 
 gRPC-Gateway (opens new window) reads a gRPC service definition and generates a reverse-proxy server which translates RESTful JSON API into gRPC. With gRPC-Gateway, users can use REST to interact the Cosmos gRPC service.
 
-See the list of supported gRPC-Gateway API endpoints for the MetaOS testnet here TODO.
+See the list of supported gRPC-Gateway API endpoints for the MetaOS testnet (here)[https://node.metaos.im].
 
 ### Ethereum JSON-RPC
 

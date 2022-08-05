@@ -6,11 +6,11 @@ The JSON-PRC Server provides an API that allows you to connect to the MetaOS blo
 JSON-RPC is provided on multiple transports. MetaOS supports JSON-RPC over HTTP and WebSocket. Transports must be enabled through command-line flags or through the `app.toml` configuration file.
 
 ### Web3 Support
-MetaOS supports all standard web3 JSON-RPC APIs. You can find documentation for these APIs on the [JSON-RPC Methods](TODO) page.
+MetaOS supports all standard web3 JSON-RPC APIs. You can find documentation for these APIs on the [JSON-RPC Methods](/en/for_web3_dev/jsonrpc_method.html) page.
 
 Ethereum JSON-RPC APIs use a name-space system. RPC methods are grouped into several categories depending on their purpose. All method names are composed of the namespace, an underscore, and the actual method name within the namespace. For example, the eth_call method resides in the eth namespace.
 
-Access to RPC methods can be enabled on a per-namespace basis. Find documentation for individual namespaces in the [Namespaces](TODO) page.
+Access to RPC methods can be enabled on a per-namespace basis. Find documentation for individual namespaces in the [Namespaces](/en/for_web3_dev/namespace.html) page.
 
 ### HEX value encoding
 At present there are two key datatypes that are passed over JSON:
@@ -38,11 +38,11 @@ When encoding unformatted data (byte arrays, account addresses, hashes, bytecode
 ### Default block parameter
 the following methods have an extra default block parameter:
 
-- [eth_getBalance](TODO)
-- [eth_getCode](TODO)
-- [eth_getTransactionCount](TODO)
-- [eth_getStorageAt](TODO)
-- [eth_call](TODO)
+- [eth_getBalance](/en/for_web3_dev/jsonrpc_method.html#eth-getbalance)
+- [eth_getCode](/en/for_web3_dev/jsonrpc_method.html#eth-getcode)
+- [eth_getTransactionCount](/en/for_web3_dev/jsonrpc_method.html#eth-gettransactioncount)
+- [eth_getStorageAt](/en/for_web3_dev/jsonrpc_method.html#eth-getstorageat)
+- [eth_call](/en/for_web3_dev/jsonrpc_method.html#eth-call)
   
 When requests are made that act on the state of MetaOS, the last default block parameter determines the height of the block.
 The following options are possible for the `defaultBlock` parameter:

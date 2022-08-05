@@ -18,7 +18,7 @@ It is possible to subscribe to `Events` via Tendermint's Websocket (opens new wi
 }
 ```
 
-These events are triggered after a block is committed. You can get the full list of `event` categories and values hereTODO.
+These events are triggered after a block is committed. You can get the full list of `event` categories and values (here)[/en/for_web3_dev/metaos_client.html#list-of-tendermint-events].
 
 The type and attribute value of the query allow you to filter the specific event you are looking for. For example, a an Ethereum transaction on MetaOS (`MsgEthereumTx`) triggers an `event` of type `ethermint` and has `sender` and `recipient` as `attributes`. Subscribing to this event would be done like so:
 ```js
@@ -44,7 +44,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],
 {"jsonrpc":"2.0","id":1,"result":"0x3503de5f0c766c68f78a03a3b05036a5"}
 ```
 
-Then you can check if the state changes with the eth_getFilterChangesTODO call:
+Then you can check if the state changes with the [eth_getFilterChanges](/en/for_web3_dev/jsonrpc_method.html#eth-getfilterchanges) call:
 
 ```bash
 curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":["0x3503de5f0c766c68f78a03a3b05036a5"],"id":1}' -H "Content-Type: application/json" http://localhost:8545

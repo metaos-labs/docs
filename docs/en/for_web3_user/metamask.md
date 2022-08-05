@@ -2,7 +2,7 @@
 
 The [MetaMask](https://metamask.io/) browser extension is a wallet for accessing Ethereum-enabled applications and managing user identities. It can be used to connect to MetaOS through the official testnet or via a locally-running MetaOS node.
 
-If you are planning on developing on MetaOS locally and you haven’t already set up your own local node, refer to the quickstart tutorial(TODO), or follow the instructions in the GitHub repository (TODO).
+If you are planning on developing on MetaOS locally and you haven’t already set up your own local node, refer to the [quickstart tutorial](/en/for_validator/installation.html), or follow the instructions in the GitHub [repository](https://github.com/metaos-labs/metaos.git).
 
 ### Adding a New Network
 Open the MetaMask extension on your browser, you may have to log in to your MetaMask account if you are not already. Then click the top right circle and go to `Settings` > `Networks` > `Add Network` and fill the form as shown below.

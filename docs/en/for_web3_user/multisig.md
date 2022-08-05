@@ -1,6 +1,5 @@
 # Multisig 
 
-[//]: # (TODO) importing multisig cause app crashed
 A **multisig account** is an MetaOS account with a special key that can require more than one signature to sign transactions. This can be useful for increasing the security of the account or for requiring the consent of multiple parties to make transactions. Multisig accounts can be created by specifying:
 
 - threshold number of signatures required
