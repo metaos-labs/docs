@@ -47,5 +47,5 @@ jobs:
         git init
         git add -A
         git commit -m 'auto deploy'
-        git push -f git@git.github.com:metaos-labs/docs.git master:gh-pages
+        git push -f git@github.com:metaos-labs/docs.git master:gh-pages
         
