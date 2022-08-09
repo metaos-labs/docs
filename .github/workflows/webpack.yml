@@ -1,0 +1,43 @@
+name: NodeJS with Webpack
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [15.x]
+    
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Build
+      env:
+        ACTION_DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }} 
+      run: |
+        npm install -g yarn 
+        yarn build
+        mkdir -p ~/.ssh/
+        echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
+        chmod 700 ~/.ssh
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+        git config --global user.email "autodeploy@metaos.im"
+        git config --global user.name "autodeploy"
+        cd docs/dist
+        git init
+        git add -A
+        git commit -m 'auto deploy'
+        git push -f git@git.github.com:metaos-labs/docs.git master:gh-pages
+        
