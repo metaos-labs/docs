@@ -224,7 +224,7 @@ function getGuideSidebar(guide, user, dev, validator) {
           {
             title: 'Installation & Quick Start',
             collapsable: true,
-            children: ["for_validator/installation.md", "for_validator/run_node.md",  "for_validator/run_node.md",
+            children: ["for_validator/installation.md", "for_validator/run_node.md",
               "for_validator/run_validator.md", "for_validator/disk_usage.md"],
           },
           "for_validator/validator_guide.md",

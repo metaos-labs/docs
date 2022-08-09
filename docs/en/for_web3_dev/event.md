@@ -6,7 +6,7 @@ Events are objects that contain information about the execution of the applicati
 
 #### Cosmos and Tendermint Events
 
-It is possible to subscribe to `Events` via Tendermint's Websocket (opens new window). This is done by calling the `subscribe` RPC method via Websocket:
+It is possible to subscribe to `Events` via Tendermint's [Websocket](https://docs.tendermint.com/v0.34/tendermint-core/subscription.html). This is done by calling the `subscribe` RPC method via Websocket:
 ```js
 {
     "jsonrpc": "2.0",
@@ -34,7 +34,7 @@ The type and attribute value of the query allow you to filter the specific event
 where `hexAddress` is an Ethereum hex address (eg: `0x1122334455667788990011223344556677889900`).
 
 #### Ethereum Events
-MetaOS also supports the Ethereum JSON-RPC filters calls to subscribe to state logs (opens new window), blocks (opens new window)or pending transactions (opens new window)changes.
+MetaOS also supports the Ethereum JSON-RPC filters calls to subscribe to [state logs](https://eth.wiki/json-rpc/API#eth_newfilter), [blocks](https://eth.wiki/json-rpc/API#eth_newblockfilter) or [pending transactions](https://eth.wiki/json-rpc/API#eth_newpendingtransactionfilter) changes.
 
 Under the hood, it uses the Tendermint RPC client's event system to process subscriptions that are then formatted to Ethereum-compatible events.
 

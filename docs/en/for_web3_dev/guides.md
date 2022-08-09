@@ -6,9 +6,9 @@
 
 The integration implementation checklist for dApp developers consists of three categories:
 
-1. [Frontend features](#Frontend features)
-2. [Transactions and wallet interactions](#Transactions and wallet interactions)
-3. [Client-side provider](#Client-side provider)
+1. [Frontend features](#frontend)
+2. [Transactions and wallet interactions](#transactions)
+3. [Client-side provider]()
 
 ### Frontend
 

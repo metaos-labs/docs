@@ -3,7 +3,7 @@
 ## General Concepts
 
 ### What is a validator?
-MetaOS is powered by Tendermint (opens new window)Core, which relies on a set of validators to secure the network. 
+MetaOS is powered by [Tendermint](https://docs.tendermint.com/master/introduction/what-is-tendermint.html)Core, which relies on a set of validators to secure the network. 
 Validators run a full node and participate in consensus by broadcasting votes which contain cryptographic signatures signed by their private key.
 Validators commit new blocks in the blockchain and receive revenue in exchange for their work. 
 They also participate in on-procotol treasury governance by voting on governance proposals. 

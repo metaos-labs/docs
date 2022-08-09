@@ -14,7 +14,7 @@ There are several categories of Ethereum transactions:
 regular transactions: transactions from one account to another
 contract deployment transactions: transactions without a to address, where the contract code is sent in the data field
 execution of a contract: transactions that interact with a deployed smart contract, where the to address is the smart contract address
-For more information on Ethereum transactions and the transaction lifecycle, go here (opens new window).
+For more information on Ethereum transactions and the transaction lifecycle, go [here](https://ethereum.org/en/developers/docs/transactions/).
 
 MetaOS supports the following Ethereum transactions.
 
