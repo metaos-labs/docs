@@ -38,6 +38,27 @@ BeginBlocker 和 EndBlocker 是模块开发人员向其模块添加自动执行�
 
 * 延时的操作：`0x00 | BigEndian(TriggerTime ms) | byte[]("/") | byte[](Identifier)-> ProtocolBuffer(DelayedAction)`
 
+### DelayedActions
+
+代表多个需要在未来某一时间触发的操作,`DelayedAction`中包含了如下必要字段:
+
+- `TriggerTime`:该操作的具体触发时间
+- `Identifier`:延迟调用模块的标识符
+- `Data`: 执行具体操作时需要的必要参数
+
+## Genesis State
+
+The `x/delayed` module's `GenesisState` defines the state necessary for initializing the chain from a previously exported height. 
+
+```go
+type GenesisState struct {
+	Params         Params          `protobuf:"bytes,1,opt,name=params,proto3" json:"params"`
+	DelayedActions []DelayedAction `protobuf:"bytes,2,rep,name=delayed_actions,json=delayedActions,proto3" json:"delayed_actions" yaml:"delayed_actions"`
+}
+```
+
+
+
 ## Usage
 
 ### CLI
