@@ -22,7 +22,50 @@ Your node is now syncing. This process will take a long time. Make sure you've s
 **Healthy Node Status Example**:
 
 ```json
-wait for supplying...
+{
+  "NodeInfo":
+  {
+    "protocol_version":
+    {
+      "p2p": "8",
+      "block": "11",
+      "app": "0"
+    },
+    "id": "a6b231498ad9ee4ea0c38dd83684a752a87c82f0",
+    "listen_addr": "tcp://0.0.0.0:26656",
+    "network": "metaos_99237-1",
+    "version": "0.34.19",
+    "channels": "40202122233038606100",
+    "moniker": "mynode",
+    "other":
+    {
+      "tx_index": "on",
+      "rpc_address": "tcp://0.0.0.0:26657"
+    }
+  },
+  "SyncInfo":
+  {
+    "latest_block_hash": "2D15A083EFE7F52F7F601DC4834210FF0D2D65837DAD1B89E7379EC753492FC3",
+    "latest_app_hash": "30A6F61A4CDCAA4929849B4826FA6DD0A95186E4CD18FBB5C8ECB7878887F89D",
+    "latest_block_height": "430135",
+    "latest_block_time": "2022-08-15T02:42:45.411875236Z",
+    "earliest_block_hash": "F9A1B0DF7CA526BD032E145ABD777098158CB35B5A8505EE98E8F6D3B0172D66",
+    "earliest_app_hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "earliest_block_height": "1",
+    "earliest_block_time": "2022-07-29T04:20:36.8705157Z",
+    "catching_up": false
+  },
+  "ValidatorInfo":
+  {
+    "Address": "D878EABC94C9CFFE5999B7D20857AE2985C69422",
+    "PubKey":
+    {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "STAG+dzw9eYKWCnCMKsxu5Br+x9gVEPtB6UlUeEtcHk="
+    },
+    "VotingPower": "0"
+  }
+}
 ```
 
 Proceed to the [](#monitor-the-sync) section.
