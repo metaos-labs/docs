@@ -2,7 +2,7 @@ module.exports = (_ctx) => ({
   sourceDir: 'docs',
   dest: 'docs/dist',
   port: 9090,
-  base: '/docs/',
+  base: '',
   configureWebpack: {
     resolve: {
       alias: {
@@ -222,12 +222,37 @@ function getGuideSidebar(guide, user, dev, validator) {
       children: [
           "for_validator/overview.md",
           {
-            title: 'Installation & Quick Start',
+            title: 'Installation & Run a Node',
             collapsable: true,
-            children: ["for_validator/installation.md", "for_validator/run_node.md",
-              "for_validator/run_validator.md", "for_validator/disk_usage.md", "for_validator/snapshot.md"],
+            children: [
+                "for_validator/run_node/contents.md",
+                "for_validator/run_node/installation.md",
+                "for_validator/run_node/set-up-production.md",
+                "for_validator/run_node/configure-general-settings.md",
+                "for_validator/run_node/join-a-network.md",
+                "for_validator/run_node/sync.md",
+                "for_validator/run_node/updates.md",
+                "for_validator/run_node/export-state.md",
+                "for_validator/run_node/additional-settings.md",
+                "for_validator/run_node/reset.md",
+            ],
           },
-          "for_validator/validator_guide.md",
+        {
+          title: 'Validator Guide',
+          collapsable: true,
+          children: [
+            "for_validator/run_validator/contents.md",
+            "for_validator/run_validator/register-a-validator.md",
+            "for_validator/run_validator/restore-a-validator.md",
+            "for_validator/run_validator/validator-states.md",
+            "for_validator/run_validator/delegate-to-a-validator.md",
+            "for_validator/run_validator/security-practices.md",
+            "for_validator/run_validator/sentry-node-architecture.md",
+            "for_validator/run_validator/remote-signer.md",
+          ],
+        },
+          "for_validator/disk_usage.md",
+          "for_validator/snapshot.md",
           "for_validator/faq.md",
       ],
     },

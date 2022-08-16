@@ -22,7 +22,7 @@ Running this command successfully will produce the following log:
 > #### Check the adressbook
 > **Tip**:
 > After resetting, make sure the addressbook contains peer addresses and is in the correct spot. 
-> If not, [download an adressbook](../run-a-full-metaos-node/join-a-network.md#1-select-a-network) and place it in `~/.metaos/config/`.
+> If not, [download an adressbook](join-a-network.md#1-select-a-network) and place it in `~/.metaos/config/`.
 
 ### Change Genesis
 

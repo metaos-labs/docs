@@ -19,7 +19,7 @@ To mitigate the issue, multiple distributed nodes (sentry nodes) are deployed in
 
 ### Network layout
 
-![network-layout](../../img/sentry_layout.png)
+![network-layout](/static/sentry_layout.png)
 
 The solution provided here is based on Amazon AWS services. Google Cloud has similar solutions to solve this issue.
 
@@ -33,7 +33,7 @@ A more persistent solution (not detailed on the diagram) is to have multiple dir
 
 ### Local configuration
 
-![local-config](../../img/local_config.png)
+![local-config](/static/local_config.png)
 
 The validator is only going to talk to the sentry nodes, while sentry nodes have the ability to talk to the validator node on the private channel and talk to public nodes elsewhere on the Internet. Optionally, they could be set up to talk to each other on the private network too.
 
