@@ -4,7 +4,7 @@
 `metaosd` is the official Golang reference implementation of the MetaOS node software.
 
 This guide is for developers who want to install `metaosd` and interact with `metaosd` without running a full node. 
-If you want to run a full node or join a network, visit [Run a full MetaOS node](../../full-node/run-a-full-metaos-node/overview.md).
+If you want to run a full node or join a network, visit [Run a full MetaOS node](../../full-node/run-a-full-metaos-node/README.md).
 
 ### Prerequisites
 
@@ -12,15 +12,10 @@ If you want to run a full node or join a network, visit [Run a full MetaOS node]
 - Ensure your `GOPATH` and `GOBIN` environment variables are set up correctly.
 - Linux users: install [build-essential](http://linux-command.org/en/build-essential.html).
 
-#### `metaosd` for Mac
-
-> If you are using a Mac, follow the [`metaosd` Mac installation guide](./metaosd-mac.md).
-
 ## From binary
 
 The easiest way to install `metaosd` is by downloading a pre-built binary for your operating system. 
 You can find the latest binaries on the [releases](https://github.com/metaos-labs/metaos/releases) page. 
-If you have a Mac, follow the [Mac installation instructions](./metaosd-mac.md).
 
 ## From source
 
@@ -68,7 +63,3 @@ go: go version go1.18.3 linux/amd64
 > ```shell
 > export PATH=$PATH:$(go env GOPATH)/bin
 > ```
-
-## Next steps
-
-For more information on `metaosd` commands and usage, see [Using metaosd]().
