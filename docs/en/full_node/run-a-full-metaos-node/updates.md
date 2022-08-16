@@ -14,13 +14,13 @@ rm ~/.metaos/config/addrbook.json
 metaosd unsafe-reset-all
 ```
 
-Your node is now in a pristine state, keeping the original `priv_validator.json` and `config.toml`. If you had any sentry nodes or full nodes set up before, your node will still try to connect to them but may fail if they haven't also been upgraded.
+Your node is now in a pristine state, keeping the original `priv_validator_key.json` and `config.toml`. If you had any sentry nodes or full nodes set up before, your node will still try to connect to them but may fail if they haven't also been upgraded.
 
 > ### DANGER!
 > 
-> Make sure that every node has a unique `priv_validator.json`. 
-> Do not copy the `priv_validator.json` from an old node to multiple new nodes. 
-> Running two nodes with the same `priv_validator.json` will cause you to double sign.
+> Make sure that every node has a unique `priv_validator_key.json`. 
+> Do not copy the `priv_validator_key.json` from an old node to multiple new nodes. 
+> Running two nodes with the same `priv_validator_key.json` will cause you to double sign.
 
 ### 2. Software upgrade
 
