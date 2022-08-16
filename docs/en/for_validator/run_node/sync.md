@@ -68,7 +68,7 @@ Your node is now syncing. This process will take a long time. Make sure you've s
 }
 ```
 
-Proceed to the [](#monitor-the-sync) section.
+Proceed to the [Monitor-the-sync](sync.md#monitor-the-sync) section.
 
 ### Fast-sync for testing
 
@@ -112,7 +112,7 @@ After choosing the appropriate download type, examine your node and ensure that 
 > 6:22PM INF Reset private validator file to genesis state keyFile=/home/ubuntu/.metaos/config/priv_validator_key.json stateFile=/home/ubuntu/.metaos/data/priv_validator_state.json
 > ```
 
-If you have an address book downloaded, you may keep it. Otherwise, you will need to download the [appropriate addressbook](join-a-network.mdoin-a-public-network).
+If you have an address book downloaded, you may keep it. Otherwise, you will need to download the [appropriate addressbook](join-a-network.md#join-a-public-network).
 
 With an address book downloaded, run the following:
 
@@ -165,4 +165,4 @@ metaosd status
 ## Congratulations!
 
 You've successfully joined a network as a full node operator. 
-If you are a validator, continue to [manage a MetaOS validator](../../full_node/manage-a-validator/README.md) for the next steps.
+If you are a validator, continue to [manage a MetaOS validator](../run_validator/contents.md) for the next steps.

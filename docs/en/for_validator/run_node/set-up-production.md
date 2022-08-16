@@ -2,7 +2,7 @@
 
 Use this guide to set up and manage a production-level full MetaOS node.
 
-For information about running a validator node, visit the [validator guide](../../full_node/manage-a-validator/README.md).
+For information about running a validator node, visit the [validator guide](../run_validator/contents.md).
 
 ## Create a dedicated user
 
