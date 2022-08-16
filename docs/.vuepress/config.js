@@ -2,7 +2,7 @@ module.exports = (_ctx) => ({
   sourceDir: 'docs',
   dest: 'docs/dist',
   port: 9090,
-  base: '',
+  base: 'docs',
   configureWebpack: {
     resolve: {
       alias: {

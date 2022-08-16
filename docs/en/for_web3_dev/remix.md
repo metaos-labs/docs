@@ -28,7 +28,7 @@ Next, select the `Deploy and Run` option. Select `Injected Web3` as the `Environ
 This will open a metamask popup for you to connect your Metamask to Remix. Select Connect to confirm.
 
 You should see your account show up in the left-hand panel.
-![remix_deploy](/static/remix_deploy.png)
+![remix_deploy](/docs/static/remix_deploy.png)
 
 ### Deploy and Interact
 
@@ -41,9 +41,9 @@ I[2020-07-15|17:26:43.155] Added good transaction                       module=m
 ```
 
 Once the contract has been successfully deployed, you will see it show up in the `Deployed Contracts` section in the left-hand side, as well as a green check in the Remix console showing the transaction details.
-![remix_deployed](/static/remix_deployed.png)
+![remix_deployed](/docs/static/remix_deployed.png)
 
 Now, you are able to interact with the contract through Remix. For `Counter.sol`, click `add`. This will open a Metamask pop-up asking you to confirm. Confirm the transaction. Then, click `getCounter` to get the count, which should be `1`.
-![remix_interact](/static/remix_interact.png)
+![remix_interact](/docs/static/remix_interact.png)
 
 

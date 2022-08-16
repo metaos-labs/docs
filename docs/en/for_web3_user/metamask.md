@@ -9,12 +9,12 @@ Open the MetaMask extension on your browser, you may have to log in to your Meta
 
 You can also lookup the [EIP155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md) Chain ID by referring to [chainlist.org](https://chainlist.org/). Alternatively, to get the full Chain ID from Genesis, check the Chain ID documentation page.
 
-![metamask](/static/metamask.png)
+![metamask](/docs/static/metamask.png)
 
 ### Import Account to Metamask
 Close the `Settings`, go to `My Accounts` (top right circle) and select `Import Account`. You should see an image like the following one:
 
-![metamask](/static/importacc.png)
+![metamask](/docs/static/importacc.png)
 Now you can export your private key from the terminal using the following command. Again, make sure to replace `mykey` with the name of the key that you want to export and use the correct keyring-backend:
 ```bash
 metaosd keys unsafe-export-eth-key mykey
