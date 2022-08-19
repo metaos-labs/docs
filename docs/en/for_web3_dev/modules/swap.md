@@ -2,22 +2,22 @@
 
 ## Concepts
 
-## CreatePool
+### CreatePool
 用户可以通过指定`denom0`,`denom1`,`fee`及`sqrt_price`来创建流动池。其中`denom0`,`denom1`分别为交易对的`denom`，两者需要保持转化为小写后升序排列的顺序，`fee`对应不同的手续费级别，通过`denom0`,`denom1`及`fee`可以生成唯一的池地址，`sqrt_price`代表交易对价格的平方根。
 
-## CreatePosition
+### CreatePosition
 
 创建完流动池后,用户可以通过设置指定的参数来创建仓位。通过`denom0`,`denom1`及`fee`可以确定对应的流动池；通过`tick_lower`及`tick_upper`可以确定交易对的价格范围，只有当价格在当前范围内才会提供流动性；通过`amount0_desired`及`amount1_desired`设置期望添加的两种代币数量，`amount0_min`及`amount1_min`设置添加两种代币的最低数量，以防止超出滑点限制；通过`recipient`指定了铸造的`NFT`的`owner`；通过`deadline`设置了交易的截止期限。
 
-## IncreaseLiquidity
+### IncreaseLiquidity
 
 用户可以向流动池中添加流动性。通过`token_id`可以确定对应的流动仓位，进而确定相应的流动池；通过`amount0_desired`及`amount1_desired`设置期望添加的两种代币数量，`amount0_min`及`amount1_min`设置添加两种代币的最低数量，以防止超出滑点限制；通过`deadline`设置了交易的截止期限。
 
-## DecreaseLiquidity
+### DecreaseLiquidity
 
 用户可以从流动池中移除流动性。通过`token_id`可以确定对应的流动仓位，进而确定相应的流动池；通过`liquidity`设置需要移除的流动性，进而可以计算出需要移除的两种代币的数量；通过`amount0_min`及`amount1_min`设置移除两种代币的最低数量，以防止超出滑点限制；通过`deadline`设置了交易的截止期限。
 
-## Collect
+### Collect
 
 用户可以从流动池中领取手续费。通过`token_id`可以确定对应的流动仓位，进而确定相应的流动池；通过`recipient`设置接收地址；通过`amount0_max`及`amount1_max`设置两种代币的最大领取数量；`collect_only`设置是否只领取欠的代币，false 表示先结算，再领取，这将会消耗更多的`gas`。
 
