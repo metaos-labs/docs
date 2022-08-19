@@ -82,7 +82,7 @@ The minimum requirements for running a MetaOS full node are:
 
 Most validators will only need to open the following port:
 
-- `26656`: The default port for the P2P protocol. This port is used to communicate with other nodes and must be open to join a network. However, it does not have to be open to the public. For validator nodes, [configuring `persistent_peers`](updates-and-additional.md#additional-settings) and closing this port to the public are recommended.
+- `26656`: The default port for the P2P protocol. This port is used to communicate with other nodes and must be open to join a network. However, it does not have to be open to the public. For validator nodes, [configuring `persistent_peers`](run_node/additional-settings.md#persistent_peers) and closing this port to the public are recommended.
 
 Additional ports:
 
