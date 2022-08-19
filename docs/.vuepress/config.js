@@ -212,7 +212,7 @@ function getGuideSidebar(guide, user, dev, validator) {
           title: 'Modules',
           collapsable: true,
           children: ['for_web3_dev/modules/inflation.md', 'for_web3_dev/modules/pool-incentives.md',
-            'for_web3_dev/modules/delayed.md', 'for_web3_dev/modules/nft.md'],
+            'for_web3_dev/modules/delayed.md', 'for_web3_dev/modules/nft.md', "for_web3_dev/modules/swap.md"],
         },
       ],
     },
