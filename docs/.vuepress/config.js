@@ -208,6 +208,7 @@ function getGuideSidebar(guide, user, dev, validator) {
         "for_web3_dev/wasm.md",
         "for_web3_dev/cosmos_grpc.md",
         "for_web3_dev/tendermint_rpc.md",
+          "for_web3_dev/ts.md",
         {
           title: 'Modules',
           collapsable: true,

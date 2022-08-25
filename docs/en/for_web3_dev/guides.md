@@ -32,10 +32,6 @@ There are several ways to wait for the load event to check the status: for insta
 
 After the user's wallet type has been determined, developers can proceed with creating, signing, and sending transactions.
 
-#### Create the Transaction
-TODO js SDK
-
-## Query Balances
 
 ### metaosd & Tendermint RPC
 Upon installation and configuration of the MetaOS Daemon, developers can query account balances using `metaosd` with the following CLI command:
